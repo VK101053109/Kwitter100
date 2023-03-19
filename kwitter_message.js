@@ -27,11 +27,7 @@ function getData() {
                         u_name=subfolder_data["name"];
                         u_message=subfolder_data["message"];
                         u_like=subfolder_data["like"];
-                        //close_button="";
-                        //if(u_name==user_name){
-                             // close_button='<button class="btn btn-warning" style="float:right" id="'+subfolder_id+'" onclick="close(this.id)" >X </button>';
-
-                        //}
+                        close_button="";
                         name_tag='<h4>'+u_name+'<img src="tick.png" class="user_tick"></h4>';
                         message_tag='<h4 class="message_h4">'+u_message+'</h4>';
                         start_tag='<button class="btn btn-warning" id="'+subfolder_id+'" onclick="likeplus(this.id)" value="'+u_like+'">';
@@ -67,6 +63,3 @@ function likeplus(button_id){
             like:likes
       });
 }
-//function close(close_id){
-      
-//}
